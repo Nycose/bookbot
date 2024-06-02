@@ -25,7 +25,7 @@ def main():
         print(f"{count_words(file_contents)} words found in the document")
         char_list = get_char_list(count_chars(file_contents))
         for ch in char_list:
-            print(f"The '{ch["letter"]}' character was found '{ch["count"]} times")
+            print(f"The '{ch["letter"]}' character was found '{ch["count"]}' times")
 
 
 main()
