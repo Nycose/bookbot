@@ -18,13 +18,14 @@ def get_char_list(char_map):
         char_list.append({ "letter": char, "count": char_map[char] })
     return char_list
 
+# Some useful comment
 def main():
     with open('books/frankenstein.txt') as f:
         file_contents = f.read() 
         print(f"{count_words(file_contents)} words found in the document")
         char_list = get_char_list(count_chars(file_contents))
         for ch in char_list:
-            print(f"The '{ch["letter"]}' character was found '{ch["count"]}' times")
+            print(f"The '{ch["letter"]}' character was found '{ch["count"]} times")
 
 
 main()
