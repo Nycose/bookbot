@@ -18,6 +18,7 @@ def get_char_list(char_map):
         char_list.append({ "letter": char, "count": char_map[char] })
     return char_list
 
+# Some useful comment
 def main():
     with open('books/frankenstein.txt') as f:
         file_contents = f.read() 
